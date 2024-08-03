@@ -1,3 +1,5 @@
+python
+```
 # Common imports
 import pandas as pd
 import numpy as np
@@ -86,3 +88,5 @@ import logging
 from evidently.dashboard import Dashboard
 from evidently.dashboard.tabs import DataDriftTab, CatTargetDriftTab
 from evidently.pipeline.column_mapping import ColumnMapping
+
+```
