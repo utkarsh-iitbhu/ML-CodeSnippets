@@ -1,30 +1,31 @@
-## 1. Data Loading
-- CSV Load file:
-    - Local csv
-    - csv from url
-    - sep param
-    - index_col
-    - header param
-    - use_cols
-    - skiprows/nrows
-    - Encoding params
-    - dtypes params
-    - handling dates
-    - huge data in chunks
 
-- API to Dataframe
-- Working with Json
-- Working with SQL
+## 1. Data Loading
+**a. CSV Load file:**
+- Local csv
+- csv from url
+- sep param
+- index_col
+- header param
+- use_cols
+- skiprows/nrows
+- Encoding params
+- dtypes params
+- handling dates
+- huge data in chunks
+
+**b. API to Dataframe**
+**c. Working with Json**
+**d. Working with SQL**
 _____________________________________________________________________________________
 
 ## 2. EDA 
 
-**1. Import and Explore:**
-- a. Imports
+**a. Import and Explore:**
+- i. Imports
     - Import packages
     - Import data in DataFrame
 
-- b. Explore
+- ii. Explore
     - Generate ProfileReport
     - Top 5 records
     - Shape
@@ -34,14 +35,14 @@ ________________________________________________________________________________
     - Missing
     - Correlation
 
-**2. EDA:**
-- a. Convert Data columns
+**b. EDA:**
+- i. Convert Data columns
     - Ordinal
     - Nominal
     - Discrete
-    - Continuos
+    - Continuous
 
-- b. Analysis
+- ii. Analysis
     - Univariate
         - Numerical
         - Categorical
@@ -56,9 +57,9 @@ ________________________________________________________________________________
 
 ## 3. Feature Engineering
 
-**1. Feature Transformation:**
+**a. Feature Transformation:**
 
-- a. Missing Value Imputation
+- i. Missing Value Imputation
     - Simple Imputation
     - Mean/Median/Mode Imputation
     - Forward/Backward Fill
@@ -66,7 +67,7 @@ ________________________________________________________________________________
     - K-Nearest Neighbors (KNN) Imputation
     - Predictive Modeling (e.g., Regression Models)
 
-- b. Handling Categorical Features
+- ii. Handling Categorical Features
     - One-Hot Encoding
     - Label Encoding
     - Ordinal Encoding
@@ -74,295 +75,295 @@ ________________________________________________________________________________
     - Target Encoding
     - Frequency Encoding
 
-- c. Outlier Detection
+- iii. Outlier Detection
     - Z-Score
     - IQR (Interquartile Range)
     - Modified Z-Score
     - DBScan Clustering
     - Isolation Forest
-    - Local Outlier Factor(LOF)
+    - Local Outlier Factor (LOF)
 
-- d. Feature Scaling
-    - Standard Scaler(Z-score Normalized)
+- iv. Feature Scaling
+    - Standard Scaler (Z-score Normalized)
     - MinMax Scaler
     - Max Abs Scaler
     - Robust Scaler
 
-- e. Data Transformation
+- v. Data Transformation
     - Log Transform
     - Box-Cox Transform
     - Yeo-Johnson Transform
     - Quantile Transform
 
-**2. Feature Construction:**
+**b. Feature Construction:**
 
-- Date Features (Year, Month, Day, Hour, Minute, Second)
-- Time Series Decomposition (Trend, Seasonality, Residuals)
-- Rolling Window Statistics (Mean, Median, Std Dev)
-- Lag Features
-- Aggregation Features
-- Domain Specific Features
+- i. Date Features (Year, Month, Day, Hour, Minute, Second)
+- ii. Time Series Decomposition (Trend, Seasonality, Residuals)
+- iii. Rolling Window Statistics (Mean, Median, Std Dev)
+- iv. Lag Features
+- v. Aggregation Features
+- vi. Domain Specific Features
 
-**3. Feature Selection:**
+**c. Feature Selection:**
 
-- a. Filter Methods
+- i. Filter Methods
     - Correlation-based Selection
     - Chi-Square Test
     - ANOVA F-Test
     - Mutual Information
 
-- b. Wrapper Methods
+- ii. Wrapper Methods
     - Recursive Feature Elimination (RFE)
     - Forward/Backward Selection
 
-- c. Embedded Methods
+- iii. Embedded Methods
     - Lasso Regularization
     - Ridge Regularization
     - Random Forest Importance
 
-- d. Dimensionality Reduction Techniques
+- iv. Dimensionality Reduction Techniques
     - Principal Component Analysis (PCA)
     - Linear Discriminant Analysis (LDA)
     - t-SNE
 
-**4. Feature Extraction:**
+**d. Feature Extraction:**
 
-- Principal Component Analysis (PCA)
-- Linear Discriminant Analysis (LDA)
-- Kernel PCA
-- t-Distributed Stochastic Neighbor Embedding (t-SNE)
-- Uniform Manifold Approximation and Projection (UMAP)
--  Independent Component Analysis (ICA)
-- Non-negative Matrix Factorization (NMF)
-- Singular Value Decomposition (SVD)
+- i. Principal Component Analysis (PCA)
+- ii. Linear Discriminant Analysis (LDA)
+- iii. Kernel PCA
+- iv. t-Distributed Stochastic Neighbor Embedding (t-SNE)
+- v. Uniform Manifold Approximation and Projection (UMAP)
+- vi. Independent Component Analysis (ICA)
+- vii. Non-negative Matrix Factorization (NMF)
+- viii. Singular Value Decomposition (SVD)
 
 _____________________________________________________________________________________
 
 ## 4. Models
 
-**1. Model Selection and Training**
-   - 1.1 Classification Models
-      - Logistic Regression
-      - Decision Trees
-      - Random Forest
-      - Support Vector Machines (SVM)
-      - Gradient Boosting (e.g., XGBoost, LightGBM)
-      - K-Nearest Neighbors (KNN)
-      - Naive Bayes
-      - Neural Networks
+**a. Model Selection and Training**
 
-   - 1.2 Regression Models
-      - Linear Regression
-      - Polynomial Regression
-      - Ridge Regression
-      - Lasso Regression
-      - Elastic Net
-      - Decision Tree Regressor
-      - Random Forest Regressor
-      - Gradient Boosting Regressor
-      - Support Vector Regression (SVR)
+- i. Classification Models
+    - Logistic Regression
+    - Decision Trees
+    - Random Forest
+    - Support Vector Machines (SVM)
+    - Gradient Boosting (e.g., XGBoost, LightGBM)
+    - K-Nearest Neighbors (KNN)
+    - Naive Bayes
+    - Neural Networks
 
-   - 1.3 Clustering Models
-      - K-Means
-      - Hierarchical Clustering
-      - DBSCAN
-      - Gaussian Mixture Models
-      - Mean Shift
-      - Spectral Clustering
+- ii. Regression Models
+    - Linear Regression
+    - Polynomial Regression
+    - Ridge Regression
+    - Lasso Regression
+    - Elastic Net
+    - Decision Tree Regressor
+    - Random Forest Regressor
+    - Gradient Boosting Regressor
+    - Support Vector Regression (SVR)
 
-   - 1.4 Cross-Validation Techniques
-      - K-Fold Cross-Validation
-      - Stratified K-Fold Cross-Validation
-      - Leave-One-Out Cross-Validation
-      - Time Series Cross-Validation
+- iii. Clustering Models
+    - K-Means
+    - Hierarchical Clustering
+    - DBSCAN
+    - Gaussian Mixture Models
+    - Mean Shift
+    - Spectral Clustering
 
-   - 1.5 Handling Class Imbalance
-      - Oversampling (e.g., SMOTE)
-      - Undersampling
-      - Combination (SMOTEENN, SMOTETomek)
-      - Class Weights
-      - Ensemble Methods (e.g., BalancedRandomForestClassifier)
+- iv. Cross-Validation Techniques
+    - K-Fold Cross-Validation
+    - Stratified K-Fold Cross-Validation
+    - Leave-One-Out Cross-Validation
+    - Time Series Cross-Validation
 
-**2. Hyperparameter Tuning:**
-   - 2.1 Grid Search
-   - 2.2 Random Search
-   - 2.3 Bayesian Optimization
-   - 2.4 Genetic Algorithms
-   - 2.5 Hyperband
-   - 2.6 Optuna
+- v. Handling Class Imbalance
+    - Oversampling (e.g., SMOTE)
+    - Undersampling
+    - Combination (SMOTEENN, SMOTETomek)
+    - Class Weights
+    - Ensemble Methods (e.g., BalancedRandomForestClassifier)
 
-**3. Model Evaluation:**
-   - 3.1 Classification Metrics
-      - Accuracy
-      - Precision
-      - Recall
-      - F1-Score
-      - ROC-AUC
-      - PR-AUC
+**b. Hyperparameter Tuning:**
+- i. Grid Search
+- ii. Random Search
+- iii. Bayesian Optimization
+- iv. Genetic Algorithms
+- v. Hyperband
+- vi. Optuna
 
-   - 3.2 Regression Metrics
-      - Mean Squared Error (MSE)
-      - Root Mean Squared Error (RMSE)
-      - Mean Absolute Error (MAE)
-      - R-squared (R2)
-      - Adjusted R-squared
+**c. Model Evaluation:**
+- i. Classification Metrics
+    - Accuracy
+    - Precision
+    - Recall
+    - F1-Score
+    - ROC-AUC
+    - PR-AUC
 
-   - 3.3 Clustering Metrics
-      - Silhouette Score
-      - Calinski-Harabasz Index
-      - Davies-Bouldin Index
+- ii. Regression Metrics
+    - Mean Squared Error (MSE)
+    - Root Mean Squared Error (RMSE)
+    - Mean Absolute Error (MAE)
+    - R-squared (R2)
+    - Adjusted R-squared
 
-   - 3.4 Reports and Visualizations
-      - Confusion Matrix
-      - Classification Report
-      - ROC Curve
-      - Precision-Recall Curve
-      - Learning Curves
-      - Validation Curves
+- iii. Clustering Metrics
+    - Silhouette Score
+    - Calinski-Harabasz Index
+    - Davies-Bouldin Index
 
-**4. Model Interpretation:**
-   - 4.1 Feature Importance Analysis
-      - Random Forest Feature Importance
-      - Permutation Importance
-      - Recursive Feature Elimination (RFE)
+- iv. Reports and Visualizations
+    - Confusion Matrix
+    - Classification Report
+    - ROC Curve
+    - Precision-Recall Curve
+    - Learning Curves
+    - Validation Curves
 
-   - 4.2 SHAP (SHapley Additive exPlanations)
-      - SHAP Summary Plot
-      - SHAP Dependence Plot
-      - SHAP Force Plot
-      - SHAP Interaction Values
+**d. Model Interpretation:**
+- i. Feature Importance Analysis
+    - Random Forest Feature Importance
+    - Permutation Importance
+    - Recursive Feature Elimination (RFE)
 
-   - 4.3 Partial Dependence Plots (PDP)
-   - 4.4 Individual Conditional Expectation (ICE) Plots
-   - 4.5 Global Surrogate Models
-   - 4.6 Local Interpretable Model-agnostic Explanations (LIME)
+- ii. SHAP (SHapley Additive exPlanations)
+    - SHAP Summary Plot
+    - SHAP Dependence Plot
+    - SHAP Force Plot
+    - SHAP Interaction Values
 
-**5. Ensemble Methods:**
-   - 5.1 Bagging
-      - Random Forest
-      - Bagging Classifier/Regressor
+- iii. Partial Dependence Plots (PDP)
+- iv. Individual Conditional Expectation (ICE) Plots
+- v. Global Surrogate Models
+- vi. Local Interpretable Model-agnostic Explanations (LIME)
 
-   - 5.2 Boosting
-      - AdaBoost
-      - Gradient Boosting
-      - XGBoost
-      - LightGBM
-      - CatBoost
+**e. Ensemble Methods:**
+- i. Bagging
+    - Random Forest
+    - Bagging Classifier/Regressor
 
-   - 5.3 Stacking
-      - StackingClassifier
-      - StackingRegressor
+- ii. Boosting
+    - AdaBoost
+    - Gradient Boosting
+    - XGBoost
+    - LightGBM
+    - CatBoost
 
-   - 5.4 Voting
-      - VotingClassifier
-      - VotingRegressor
+- iii. Stacking
+    - StackingClassifier
+    - StackingRegressor
+
+- iv. Voting
+    - VotingClassifier
+    - VotingRegressor
 
 _____________________________________________________________________________________
 
-## 5. Evaluation and Deployement
+## 5. Evaluation and Deployment
 
-**6. Error Analysis:**
-   - 6.1 Analyzing Misclassifications
-      - Identifying patterns in misclassified instances
-      - Confusion matrix analysis
-      - Error rate by class
+**a. Error Analysis:**
+- i. Analyzing Misclassifications
+    - Identifying patterns in misclassified instances
+    - Confusion matrix analysis
+    - Error rate by class
 
-   - 6.2 Bias-Variance Tradeoff
-      - Learning curves analysis
-      - Bias-variance decomposition
+- ii. Bias-Variance Tradeoff
+    - Learning curves analysis
+    - Bias-variance decomposition
 
-   - 6.3 Residual Analysis (for regression)
-      - Residual plots
-      - Q-Q plots
-      - Heteroscedasticity check
+- iii. Residual Analysis (for regression)
+    - Residual plots
+    - Q-Q plots
+    - Heteroscedasticity check
 
-   - 6.4 Cross-validation Insights
-      - K-fold CV score distribution
-      - Out-of-fold predictions analysis
+- iv. Cross-validation Insights
+    - K-fold CV score distribution
+    - Out-of-fold predictions analysis
 
-   - 6.5 Feature Importance in Errors
-      - SHAP values for misclassifications
-      - Feature importance for error cases
+- v. Feature Importance in Errors
+    - SHAP values for misclassifications
+    - Feature importance for error cases
 
-**7. Model Persistence:**
-   - 7.1 Saving Models
-      - Pickle serialization
-      - Joblib serialization
-      - TensorFlow SavedModel format
-      - ONNX format
+**b. Model Persistence:**
+- i. Saving Models
+    - Pickle serialization
+    - Joblib serialization
+    - TensorFlow SavedModel format
+    - ONNX format
 
-   - 7.2 Loading Models
-      - Deserializing saved models
-      - Versioning loaded models
+- ii. Loading Models
+    - Deserializing saved models
+    - Versioning loaded models
 
-   - 7.3 Model Versioning
-      - Version control for models (e.g., DVC, MLflow)
-      - Model metadata tracking
+- iii. Model Versioning
+    - Version control for models (e.g., DVC, MLflow)
+    - Model metadata tracking
 
-   - 7.4 Model Registry
-      - Centralized model storage
-      - Model lifecycle management
+- iv. Model Registry
+    - Centralized model storage
+    - Model lifecycle management
 
-**8. Model Deployment:**
-   - 8.1 API Development
-      - Flask API
-      - FastAPI
-      - Django REST framework
+**c. Model Deployment:**
+- i. API Development
+    - Flask API
+    - FastAPI
+    - Django REST framework
 
-   - 8.2 Containerization
-      - Docker containerization
-      - Docker-compose for multi-container apps
+- ii. Containerization
+    - Docker containerization
+    - Docker-compose for multi-container apps
 
-   - 8.3 Cloud Deployment
-      - AWS SageMaker
-      - Google Cloud AI Platform
-      - Azure Machine Learning
+- iii. Cloud Deployment
+    - AWS SageMaker
+    - Google Cloud AI Platform
+    - Azure Machine Learning
 
-   - 8.4 Serverless Deployment
-      - AWS Lambda
-      - Google Cloud Functions
-      - Azure Functions
+- iv. Serverless Deployment
+    - AWS Lambda
+    - Google Cloud Functions
+    - Azure Functions
 
-   - 8.5 Edge Deployment
-      - TensorFlow Lite
-      - ONNX Runtime
+- v. Edge Deployment
+    - TensorFlow Lite
+    - ONNX Runtime
 
-**9. Monitoring and Maintenance:**
-   - 9.1 Logging
-      - Application logging
-      - Model prediction logging
-      - Error logging
+**d. Monitoring and Maintenance:**
+- i. Logging
+    - Application logging
+    - Model prediction logging
+    - Error logging
 
-   - 9.2 Performance Monitoring
-      - Model accuracy tracking
-      - Prediction latency monitoring
-      - Resource utilization monitoring
+- ii. Performance Monitoring
+    - Model accuracy tracking
+    - Prediction latency monitoring
+    - Resource utilization monitoring
 
-   - 9.3 Data Drift Detection
-      - Feature distribution monitoring
-      - Concept drift detection
-      - Outlier detection in new data
+- iii. Data Drift Detection
+    - Feature distribution monitoring
+    - Concept drift detection
+    - Outlier detection in new data
 
-   - 9.4 Automated Alerts
-      - Performance degradation alerts
-      - Data quality alerts
-      - System health alerts
+- iv. Automated Alerts:
+    - Performance degradation alerts
+    - Data quality alerts
+    - System health alerts
 
-   - 9.5 Model Updating
-      - Incremental learning
-      - Periodic retraining
-      - A/B testing for model updates
+- v. Model Updating:
+    - Incremental learning
+    - Periodic retraining
+    - A/B testing for model updates
 
-   - 9.6 Feedback Loop Implementation
-      - User feedback collection
-      - Ground truth acquisition
-      - Continuous learning pipeline
+- vi. Feedback Loop Implementation:**
+    - User feedback collection
+    - Ground truth acquisition
+    - Continuous learning pipeline
 
 **10. Advanced Techniques:**
-   - 10.1 Automated Machine Learning (AutoML)
-      - Auto-sklearn
-      - TPOT
-      - H2O AutoML
-      - Google Cloud AutoML
-
+- i. Automated Machine Learning (AutoML)
+    - Auto-sklearn
+    - TPOT
+    - H2O AutoML
+    - Google Cloud AutoML
 ____________________________________________________________________________
